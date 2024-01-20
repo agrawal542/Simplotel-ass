@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: linear-gradient(to right, rgb(243, 243, 163), rgb(244, 175, 186));
+
+        }
+
+        .container {
+            height: 95%;
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .leftBody {
+            width: 40%;
+            height: 70%;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 50%);
+            gap: 1%;
+        }
+
+        #img3 {
+            text-align: center;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            background-color: aqua;
+        }
+
+        .leftBody img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .rightBody {
+            background-color: #fd5c63;
+            width: 50%;
+            object-fit: fill;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 1rem;
+            display: flex;
+
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+
+        }
+        h1 {
+            padding:  5% 0%;
+            font-size: 4rem;
+            letter-spacing: 5px;
+        }
+
+        .click {
+            display: flex;
+            font-size: larger;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1rem;
+            width: 2rem;
+            height: 1.5rem;
+        }
+
+       
+
+        @media only screen and (max-width: 767px) {
+            .container {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+            }
+            .leftBody {
+                width: 80%;
+                height: 40%;
+                gap: 5%;
+            }
+
+            .rightBody {
+                width: 80%;
+                padding: 5%;
+             }
+
+            h1 {
+                font-size: 2rem;
+                letter-spacing: 3px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="leftBody">
+                <div>
+                    <img src="./pexels-rachel-claire-6752433.jpg" alt="rachel-claire">
+                </div>
+
+                <div>
+                    <img src="./pexels-eva-bronzini-6141651.jpg" alt="eva-bronzini">
+                </div>
+                <div id="img3">
+                    <img src="./pexels-mister-mister-3434523.jpg" alt="mister-mister">
+                </div>
+            </div>
+
+            <div class="rightBody">
+                <div>LOREM IPSUM</div>
+                <h1>LOREM IPSUM SET ADEMIR</h1>
+                <div class="click">
+                    <div>
+                        Click
+                    </div>
+                    <div class="arrow">
+                        <img src="./icons8-arrow-30.png" alt="arrow">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
